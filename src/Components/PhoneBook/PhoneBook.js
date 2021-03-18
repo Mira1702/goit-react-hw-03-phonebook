@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import shortid from 'shortid';
-import './PhoneBook.css';
+import styles from './PhoneBook.module.css';
 
 class PhoneBook extends Component {
     state = {        
@@ -31,14 +31,11 @@ class PhoneBook extends Component {
             number: ''
         });
     }
-
-    
-
         
     render() {        
         return (            
                 <form onSubmit={this.handleSubmit}  className="form">
-                   <label className="label" htmlFor={this.nameInputId}>Name
+                   <label className={styles.label} htmlFor={this.nameInputId}>Name
                        <input
                         type="text"
                         name="name"
@@ -47,7 +44,7 @@ class PhoneBook extends Component {
                         id={this.nameInputId}
                        ></input>
                    </label>
-                   <label className="label" htmlFor={this.numberInputId}>Number   
+                   <label className={styles.label} htmlFor={this.numberInputId}>Number   
                        <input
                         type="tel"
                         name="number"
@@ -58,7 +55,7 @@ class PhoneBook extends Component {
                     </label>
                     <button 
                         type="submit"
-                        className="button"                        
+                        className={styles.button}                        
                     >Add contact</button>
                 </form>            
         )

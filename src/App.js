@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import shortid from 'shortid';
-import Title from './Title';
-import PhoneBook from './PhoneBook';
-import Contacts from './Contacts';
-import Filter from './Filter';
+import Title from './Components/Titel/Title';
+import PhoneBook from './Components/PhoneBook/PhoneBook';
+import Contacts from './Components/Contacts/Contacts';
+import Filter from './Components/Filter/Filter';
 
 class App extends Component {
   state = {
